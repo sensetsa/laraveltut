@@ -1,0 +1,36 @@
+.standardMargin{
+    margin: 20px 20px 20px 20px
+}
+a:link {
+    text-decoration: none;
+}
+html{
+    overflow: hidden !important
+}
+.parallax-body{
+    height: 100vh;
+    margin: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+
+    -webkit-perspective: 1px;
+    perspective: 1px;
+}
+.parallax-img{
+    width: 100%;
+}
+.parallax-group{
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+.back{
+    -webkit-transform: translateZ(-1px) scale(2);
+    transform: translateZ(-1px) scale(2);
+    position: relative;
+    top: calc(((100vh - 54.63vw) / 4 ) * -2);
+}
+.front{
+    position: relative;
+    z-index: 2px;
+}
